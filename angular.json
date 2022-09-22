@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "netoyed.in": {
+    "netoyed-in": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/netoyed.in",
+            "outputPath": "dist/netoyed-in",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,6 +25,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
+              "src/humans.txt",
+              "src/robots.txt",
               "src/assets"
             ],
             "styles": [
@@ -69,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "netoyed.in:build:production"
+              "browserTarget": "netoyed-in:build:production"
             },
             "development": {
-              "browserTarget": "netoyed.in:build:development"
+              "browserTarget": "netoyed-in:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "netoyed.in:build"
+            "browserTarget": "netoyed-in:build"
           }
         },
         "test": {
@@ -93,7 +95,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/humans.txt",
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -103,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a66307b9-e985-4ae6-9db8-235223900a11"
   }
 }

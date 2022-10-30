@@ -27,6 +27,7 @@
               "src/favicon.ico",
               "src/humans.txt",
               "src/robots.txt",
+              "src/sitemap.xml",
               "src/assets"
             ],
             "styles": [
@@ -97,6 +98,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/humans.txt",
+              "src/sitemap.xml",
               "src/robots.txt"
             ],
             "styles": [
@@ -109,6 +111,7 @@
     }
   },
   "cli": {
-    "analytics": "a66307b9-e985-4ae6-9db8-235223900a11"
+    "analytics": "a66307b9-e985-4ae6-9db8-235223900a11",
+    "packageManager": "yarn"
   }
 }
